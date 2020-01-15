@@ -1,6 +1,6 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle `
+export default createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
@@ -12,24 +12,43 @@ export default createGlobalStyle `
 }
 
 html, border-style, #root{
-    height:100%;
-
+  height:100%;
 }
 
 body {
-    font: 14px 'Roboto' sans-serif;
-    background: #ecf1f8;
+    font: 14px 'Roboto', sans-serif;
+    background: #fff;
     color:#333;
     
     -webkit-font-smoothing: antialiased !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    resize: horizontal;
+}
 
-    /* Full height */
+.fade-transition {
+    position:absolute;
+    width: 100%;
     height: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.fade-transition-enter {
+  opacity: 0;
+}
+
+.fade-transition-enter-active {
+  opacity: 1;
+
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-transition-exit {
+  opacity: 1;
+}
+.fade-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
 
 `;
