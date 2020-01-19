@@ -11,12 +11,12 @@ export const Container = styled.div`
     align-items: center;
 
     .logo {
-      img {
-        width: 35%;
-
-        @media only screen and (max-width: 768px) {
-          width: 45%;
-        }
+      h1{
+        font: 20px 'Roboto', sans-serif;
+        font-weight:500;
+        color:#f2f2f2;   
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-overflow-scrolling: touch;
       }
     }
 

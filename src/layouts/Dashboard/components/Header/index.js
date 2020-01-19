@@ -20,7 +20,7 @@ const Header = props => {
     <Container>
       <header>
         <div className="logo">
-          <img alt="Logo" src="/images/logo.png"></img>
+          <h1>DASHBOARD</h1>
         </div>
         <div className="open-side-bar">
           <div
