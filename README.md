@@ -1,4 +1,4 @@
-Simple and Small Dashboard (under construct). React and Styled-Components.
+Dashboard (under construct).
 
 ## Available Scripts
 
